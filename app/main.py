@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 MODEL_PATH = "best_model.pth"
-NUM_LABELS = 5  # Adjust based on your categories
+NUM_LABELS = 5  
 tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 model = None  # Placeholder for trained model
 
