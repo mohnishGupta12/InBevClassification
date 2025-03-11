@@ -127,13 +127,3 @@ class BERTClassifier:
         accuracy = np.mean(np.array(predictions) == np.array(true_labels))
         logger.info(f'Validation Report:\n{classification_report(true_labels, predictions)}')
         return avg_val_loss, accuracy
-
-
-# MODEL_PATH = "best_model.pth"
-# model = None  # Placeholder for trained model
-# train_loader, val_loader, categories = DataProcessor().get_data_loaders()
-# print("categories are:",categories)
-# num_labels= len(categories)
-# model, model_path = BERTClassifier(num_labels=num_labels).train_model(train_loader, val_loader)
-# torch.save(model.state_dict(), MODEL_PATH)
-# logger.info("Training complete. Model saved.")
