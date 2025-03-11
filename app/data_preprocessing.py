@@ -1,5 +1,3 @@
-file_path = "C:/pythonproject/classification/InBevClassification/text_classification_ecomm/ecommerceDataset.csv"
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from transformers import BertTokenizer
